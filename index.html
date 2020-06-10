@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Vue JS training</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="product">
+                <div class="product-image">
+                    <img v-bind:src="image" v-bind:alt="altText">
+                </div>
+                <div class="product-info">
+                    <h1>{{ product }}</h1>
+                    <p v-if="inStock">In Stock</p>
+                    <p v-else>Out of Stock</p>
+                </div>
+            </div>
+        </div>
+        <!-- Vue JS Script -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
