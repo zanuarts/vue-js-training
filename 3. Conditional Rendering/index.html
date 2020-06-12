@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Vue JS Training</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="product">
+                <img v-bind:src="image">
+            </div>
+            <div class="product-info">
+                <h1>{{product}}</h1>
+                <p v-if="inventory > 10">In Stock</p>
+                <p v-else-if="inventory <=10 && inventory > 0">Almost sold out!</p>
+                <p v-else>Out of Stock</p>
+                <span v-show="onSale">On Sale!</span>
+            </div>
+        </div>
+
+        <!-- Vue JS Script -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
